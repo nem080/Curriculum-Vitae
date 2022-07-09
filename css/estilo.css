@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background: #000000;
+    display: Flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000%;
+    min-height: 1000px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+.container .left_Side {
+    position: relative;
+    background: #190047;
+    padding: 40px;
+}
+
+/* #003147; */
+.perfil-Text {
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgb(145, 215, 238);
+}
+
+.perfil-Text .imgbx {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+
+}
+
+/* aredondando a imagem */
+.perfil-Text .imgbx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.perfil-Text h2 {
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    font-weight: bold;
+    line-height: 1.4em;
+    margin-bottom: 10px;
+}
+
+.perfil-Text h2 span {
+    font-size: 0.9em;
+    font-weight: 300;
+    color: #fff;
+}
+
+
+.contatoInfo {
+    padding-top: 40px;
+}
+
+.titulo {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.contatoInfo ul {
+    position: relative;
+}
+
+.contatoInfo ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contatoInfo ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 19px;
+    color: rgba(7, 219, 243, 0.98);
+}
+
+.contatoInfo ul li span {
+    color: #fff;
+    font-weight: 300;
+
+}
+
+.contatoInfo span a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+/* fim da contatoInfo */
+
+.InfEducacional {
+    padding-top: 20px;
+}
+
+.InfEducacional h3 {
+    padding-top: 10px;
+}
+
+
+.InfEducacional li {
+    margin-bottom: 0px;
+    list-style: none;
+    line-height: 15px;
+}
+
+.InfEducacional h5 {
+    color: rgba(7, 219, 243, 0.98);
+    font-weight: 500;
+    padding-top: 10px;
+    margin: 18px 0 10px;
+}
+
+.InfEducacional h4:nth-child(2) {
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.InfEducacional h4 {
+    color: rgba(212, 247, 250, 0.98);
+    font-weight: 500;
+}
+
+.InfIdiomas .titulo {
+    padding-top: 20px;
+
+}
+
+.InfIdiomas {
+    padding-top: 30px;
+}
+
+.InfIdiomas ul li {
+    list-style: none;
+
+}
+
+/* rever esse trecho para usar o mesmo tamanho de font */
+.InfIdiomas .text_idiomas {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 30px 0;
+
+}
+
+
+.InfIdiomas .barra {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: rgba(3, 12, 12, 0.98);
+    display: block;
+    margin-top: 5px;
+
+}
+
+.InfIdiomas .barra div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgba(7, 219, 243, 0.98);
+}
+
+
+
+/* card esquerdo */
+.container .right_Side {
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+
+.about {
+    margin-bottom: 50px;
+
+}
+
+.about:last-child {
+    margin-bottom: 0;
+}
+
+.about .titulo2 {
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+
+}
+
+.about p {
+    padding-top: 10px;
+    color: rgb(133, 139, 143);
+    line-height: 1.5em;
+    /* background-color: red; */
+
+}
+
+.about .box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 60px 0;
+}
+
+.about .box .sua_empresas {
+    min-width: 150;
+}
+
+.about .box .sua_empresas h3 {
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+}
+
+.about .box .text h4 {
+    text-transform: uppercase;
+    color: #003147;
+    font-size: 16px;
+    padding-left: 110px;
+
+}
+
+.about .box .text p {
+    color: #848c90;
+    padding-left: 110px;
+}
+
+.about_skills .box {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.iconskill i {
+    margin: 10px;
+    font-size: 30px;
+    padding-top: 10px;
+    display: block;
+    color: #848c99;
+}
+
+.about_skills h2 {
+    margin: 30px 0;
+    color: #003147;
+}
+
+.about_skills .box h4 {
+    text-transform: uppercase;
+    color: #848c99;
+    font-weight: 200;
+
+}
+
+.about_skills .box .barra {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background-color: #003147;
+    margin: 20px 0;
+
+}
+
+.about_skills .box .barra div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #2a7da2;
+}
+
+.interesse .titulo2 {
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 20px 0 10px 0;
+    padding-top: 30px;
+}
+
+.interesse ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.interesse ul li {
+    color: #333;
+    font-weight: 500;
+    margin: 10px 0;
+    list-style: none;
+}
+
+.interesse ul li .fa {
+    font-size: 20px;
+    color: rgb(30, 18, 71);
+    margin: 10px;
+}
+
+.interesse ul li p {
+    display: inline-block;
+    color: #858b8f;
+}
+
+/* responsividade */
+@media (max-width:1052px){
+    .contatoInfo span {
+        margin-left: 90px;
+    }
+    .contatoInfo span a {
+        display: block;
+        background:red;   
+        text-align: center; 
+    }
+
+    .InfEducacional ul h4{
+        line-height: 1.4;
+        background:#000000
+    }
+
+    .right_Side .titulo2{
+        text-align: center;
+    }
+
+    
+}
+@media (max-width:820px) {
+    .container {
+        display: block;
+    }
+}
+
+@media (max-width:820px) {
+    .right_Side {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .about .titulo2 {
+        text-align: center;
+    }
+
+    .about .box {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width:768px) {
+    .right_Side {
+        display: block;
+        margin-bottom: 20px;
+        
+    }
+
+    .about .titulo2 {
+        text-align: center;
+       padding-top:90px;
+    }
+
+    .about .box {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (max-width:376px) {
+    .about{
+        display:flex;
+        flex-flow: row wrap;
+        justify-content:center;
+        align-content: center;
+    }
+
+    .InfEducacional li, h4{
+        line-height: 1.6;
+    }
+
+    .box{
+        display:flex;
+        flex-flow: row wrap;
+        justify-content:center;
+    }
+    .about h2{
+        margin:-10px;
+    }
+
+    .sua_empresas{
+        padding-bottom: 30px;
+    }
+    .sua_empresas h3{
+        text-align:center;
+        margin: 0px 20px 0px 0px;
+        
+          
+    }
+
+    .text{
+
+        height: 200px;
+        bottom:1000px;
+        padding: 20px;
+        display:flex;
+        display: grid;
+        margin-right:65%;
+       
+    }
+
+    .text h4{
+       margin-left: 60px;
+       text-align: justify;
+       text-align: center;
+       padding-bottom: 20px;
+       
+    }
+    .text p{
+        position: absolute;
+        padding-right: 65px;
+        margin-top: 0px;
+        text-align:center;
+       
+       
+         
+    }
+
+    
+
+    .about_skills h2{
+        text-align: center;
+        /* padding-top: 30px; */
+
+    }
+}
+
+/* falta concluir mais algumas partes  */
+@media (max-width:360px) {
+    .about .titulo2 
+
+    .about{
+        display:flex;
+        flex-flow: row wrap;
+        justify-content:center;
+    }
+
+    .box{
+        display:flex;
+        flex-flow: row wrap;
+        justify-content:center;
+    }
+    .about h2{
+        margin:-10px;
+    }
+
+    .sua_empresas{
+        padding-bottom: 30px;
+    }
+    .sua_empresas h3{
+        text-align:center;
+        margin:0px;
+        background:brown;   
+    }
+
+    .text{
+
+        height: 200px;
+        bottom:1000px;
+        padding: 20px;
+        display:flex;
+        display: grid;
+        margin-right:65%;
+       
+    }
+
+    .text h4{
+       margin-left: 60px;
+       text-align: justify;
+       text-align: center;
+       padding-bottom: 20px;
+       
+    }
+    .text p{
+        position: absolute;
+        padding-right: 65px;
+        margin-top: 50px;
+        text-align:center;
+       background-color: #000000;
+       
+         
+    }
+
+   
+
+    .about_skills{
+        padding-top: 30px;
+    }
+}
+
+@media (max-width:325px){
+    .interesse p{
+        display:none;
+        background:#000000;
+    }
+}
+
