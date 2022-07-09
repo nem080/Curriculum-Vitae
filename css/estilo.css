@@ -352,17 +352,15 @@ body {
 /* responsividade */
 @media (max-width:1052px){
     .contatoInfo span {
-        margin-left: 90px;
+        margin-left: 95px;
     }
     .contatoInfo span a {
-        display: block;
-        background:red;   
+        display: block;  
         text-align: center; 
     }
 
     .InfEducacional ul h4{
         line-height: 1.4;
-        background:#000000
     }
 
     .right_Side .titulo2{
