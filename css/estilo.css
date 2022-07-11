@@ -13,6 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+
 }
 
 .container {
@@ -350,25 +351,27 @@ body {
 }
 
 /* responsividade */
-@media (max-width:1052px){
+@media (max-width:1052px) {
     .contatoInfo span {
-        margin-left: 95px;
+        margin-left: 105px;
     }
+
     .contatoInfo span a {
-        display: block;  
-        text-align: center; 
-    }
-
-    .InfEducacional ul h4{
-        line-height: 1.4;
-    }
-
-    .right_Side .titulo2{
+        display: block;
         text-align: center;
     }
 
-    
+    .InfEducacional ul h4 {
+        line-height: 1.4;
+    }
+
+    .right_Side .titulo2 {
+        text-align: center;
+    }
+
+
 }
+
 @media (max-width:820px) {
     .container {
         display: block;
@@ -389,161 +392,88 @@ body {
         display: flex;
         align-items: center;
     }
+
+    .contatoInfo .icon {
+        display: inline;
+        padding-bottom: 5px;
+        margin-left: 48%;
+    }
 }
 
-@media (max-width:768px) {
+@media (max-width:769px) {
+    .contatoInfo li {
+        position: relative;
+    }
+
+    .contatoInfo .icon {
+        display: block;
+        padding-bottom: 5px;
+        margin-left: 48%;
+    }
+
     .right_Side {
         display: block;
         margin-bottom: 20px;
-        
+
     }
 
     .about .titulo2 {
         text-align: center;
-       padding-top:90px;
+        padding-top: 90px;
     }
 
     .about .box {
         display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .box {
+        display: flex;
         align-items: center;
     }
-}
 
-@media (max-width:376px) {
-    .about{
-        display:flex;
-        flex-flow: row wrap;
-        justify-content:center;
-        align-content: center;
-    }
-
-    .InfEducacional li, h4{
-        line-height: 1.6;
-    }
-
-    .box{
-        display:flex;
-        flex-flow: row wrap;
-        justify-content:center;
-    }
-    .about h2{
-        margin:-10px;
-    }
-
-    .sua_empresas{
-        padding-bottom: 30px;
-    }
-    .sua_empresas h3{
-        text-align:center;
-        margin: 0px 20px 0px 0px;
-        
-          
-    }
-
-    .text{
-
-        height: 200px;
-        bottom:1000px;
-        padding: 20px;
-        display:flex;
-        display: grid;
-        margin-right:65%;
-       
-    }
-
-    .text h4{
-       margin-left: 60px;
-       text-align: justify;
-       text-align: center;
-       padding-bottom: 20px;
-       
-    }
-    .text p{
-        position: absolute;
-        padding-right: 65px;
-        margin-top: 0px;
-        text-align:center;
-       
-       
-         
-    }
-
-    
-
-    .about_skills h2{
+    .sua_empresas h3 {
         text-align: center;
-        /* padding-top: 30px; */
+    }
+
+    .text {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
 
     }
-}
 
-/* falta concluir mais algumas partes  */
-@media (max-width:360px) {
-    .about .titulo2 
+    /* centralizar itens  */
+    .text h4 {
+        display: inline-block;
+        padding-right: 110px;
+        text-align: center;
+        margin: 8px;
+    }
 
-    .about{
-        display:flex;
+    .text p {
+        display: inline-block;
+        text-align: center;
+        margin-right: 20px;
+        padding-right: 90px;
+    }
+
+    .interesse ul {
+        display: flex;
         flex-flow: row wrap;
-        justify-content:center;
+        justify-content: center;
     }
 
-    .box{
-        display:flex;
-        flex-flow: row wrap;
-        justify-content:center;
-    }
-    .about h2{
-        margin:-10px;
-    }
-
-    .sua_empresas{
-        padding-bottom: 30px;
-    }
-    .sua_empresas h3{
-        text-align:center;
-        margin:0px;
-        background:brown;   
-    }
-
-    .text{
-
-        height: 200px;
-        bottom:1000px;
-        padding: 20px;
-        display:flex;
-        display: grid;
-        margin-right:65%;
-       
-    }
-
-    .text h4{
-       margin-left: 60px;
-       text-align: justify;
-       text-align: center;
-       padding-bottom: 20px;
-       
-    }
-    .text p{
-        position: absolute;
-        padding-right: 65px;
-        margin-top: 50px;
-        text-align:center;
-       background-color: #000000;
-       
-         
-    }
-
-   
-
-    .about_skills{
-        padding-top: 30px;
+    .interesse p {
+        margin-right: 10px;
     }
 }
 
-@media (max-width:325px){
-    .interesse p{
-        display:none;
-        background:#000000;
+@media (max-width:415px) {
+
+    body {
+        background-color: rgb(30, 18, 71);
     }
 }
-
